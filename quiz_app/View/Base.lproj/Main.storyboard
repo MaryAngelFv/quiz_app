@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="quiz_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boO-ni-dS0" userLabel="Top View">
+                                <rect key="frame" x="16" y="52" width="382" height="397"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZyW-fV-1TU">
+                                        <rect key="frame" x="8" y="8" width="366" height="381"/>
+                                        <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="-1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ZyW-fV-1TU" firstAttribute="leading" secondItem="boO-ni-dS0" secondAttribute="leading" constant="8" id="2NT-T0-Y42"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZyW-fV-1TU" secondAttribute="bottom" constant="8" id="Mb4-5V-UWO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZyW-fV-1TU" secondAttribute="trailing" constant="8" id="bbx-mh-nYo"/>
+                                    <constraint firstItem="ZyW-fV-1TU" firstAttribute="top" secondItem="boO-ni-dS0" secondAttribute="top" constant="8" id="xnq-tL-CFf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkN-Ia-5D6" userLabel="Botton View">
+                                <rect key="frame" x="16" y="457" width="382" height="397"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="4rh-Zg-RsB">
+                                        <rect key="frame" x="31" y="168" width="320" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsC-Ty-CRf">
+                                                <rect key="frame" x="0.0" y="5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="A4x-qI-BWh"/>
+                                                    <constraint firstAttribute="height" constant="60" id="IgG-eh-Jg3"/>
+                                                </constraints>
+                                                <size key="titleShadowOffset" width="0.0" height="4"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Verdadero" cornerStyle="small" titleAlignment="center">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="labelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdR-zI-VaS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4L-nt-3aH">
+                                                <rect key="frame" x="200" y="5" width="120" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="7LD-zs-re5"/>
+                                                    <constraint firstAttribute="height" constant="60" id="U2S-BW-D00"/>
+                                                </constraints>
+                                                <size key="titleShadowOffset" width="0.0" height="4"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Falso" cornerStyle="small" titleAlignment="center">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="labelColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0FL-er-9ag"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="CG2-l2-lLi"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="yTc-Y1-Ohb"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="J8G-uk-ydJ">
+                                        <rect key="frame" x="8" y="333" width="366" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx/10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAZ-pp-2o1">
+                                                <rect key="frame" x="0.0" y="0.0" width="206" height="24"/>
+                                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje: 0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLJ-2F-PjD">
+                                                <rect key="frame" x="216" y="0.0" width="150" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="SrN-jj-bXc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="MalayalamSangamMN" family="Malayalam Sangam MN" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="J8G-uk-ydJ" secondAttribute="bottom" constant="40" id="EY0-7H-hhK"/>
+                                    <constraint firstItem="J8G-uk-ydJ" firstAttribute="leading" secondItem="hkN-Ia-5D6" secondAttribute="leading" constant="8" id="NsZ-mF-sOs"/>
+                                    <constraint firstAttribute="trailing" secondItem="J8G-uk-ydJ" secondAttribute="trailing" constant="8" id="b0d-BK-lse"/>
+                                    <constraint firstItem="4rh-Zg-RsB" firstAttribute="centerX" secondItem="hkN-Ia-5D6" secondAttribute="centerX" id="iYu-OD-AfT"/>
+                                    <constraint firstItem="4rh-Zg-RsB" firstAttribute="top" secondItem="hkN-Ia-5D6" secondAttribute="top" constant="168" id="wxF-WF-lx0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvO-yo-g9i">
+                                <rect key="frame" x="0.0" y="855" width="30" height="15"/>
+                                <color key="backgroundColor" red="0.62969462697299849" green="0.31908914843905667" blue="0.89040539251699424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.78729261939999995" green="0.52224639949999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="v8Q-g2-sNc"/>
+                                    <constraint firstAttribute="width" constant="30" identifier="barWidth" id="w4i-k4-Ib3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.7088093507771791" blue="0.49916458082745818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XvO-yo-g9i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4up-rb-3ne"/>
+                            <constraint firstItem="hkN-Ia-5D6" firstAttribute="top" secondItem="boO-ni-dS0" secondAttribute="bottom" constant="8" id="5Qg-pg-rMn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hkN-Ia-5D6" secondAttribute="bottom" constant="8" id="Jir-jA-7vV"/>
+                            <constraint firstItem="boO-ni-dS0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="N07-Cf-ppz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hkN-Ia-5D6" secondAttribute="trailing" constant="16" id="PDe-VP-oin"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="boO-ni-dS0" secondAttribute="trailing" constant="16" id="S0f-tq-fUC"/>
+                            <constraint firstAttribute="bottom" secondItem="XvO-yo-g9i" secondAttribute="bottom" constant="26" id="Wvt-fG-GYc"/>
+                            <constraint firstItem="hkN-Ia-5D6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Yqm-af-YjA"/>
+                            <constraint firstItem="boO-ni-dS0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="qQt-em-QaX"/>
+                            <constraint firstItem="hkN-Ia-5D6" firstAttribute="height" secondItem="boO-ni-dS0" secondAttribute="height" id="t8O-h6-yzR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelNumberQuestion" destination="HAZ-pp-2o1" id="S2x-q1-bMQ"/>
+                        <outlet property="labelQuestion" destination="ZyW-fV-1TU" id="7dZ-YR-XAS"/>
+                        <outlet property="labelScore" destination="KLJ-2F-PjD" id="2Cc-WI-fOf"/>
+                        <outlet property="progressBar" destination="XvO-yo-g9i" id="ynf-72-ENp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
